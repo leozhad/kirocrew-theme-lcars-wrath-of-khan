@@ -1,0 +1,15 @@
+{
+  "slug": "leozh-lcars-twok",
+  "name": "LCARS · Wrath of Khan",
+  "emoji": "🧬",
+  "level": 1,
+  "formatVersion": 1,
+  "fonts": [
+    {
+      "family": "Michroma",
+      "file": "michroma-regular.ttf",
+      "weight": 400,
+      "role": "sans"
+    }
+  ]
+}

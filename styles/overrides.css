@@ -1,0 +1,40 @@
+/*
+ * Wrath of Khan: the 2285 bridge displays (Lee Cole's graphics).
+ * A monitor: black glass, phosphor-green readouts, a grey housing.
+ * Light mode uses the same rules: the film has no light mode.
+ * Only runtime-allowlisted surfaces are styled. Fonts come from theme.json.
+ */
+/* Vector-display glow: a tight core and a soft halo, mixed from currentColor. */
+[data-theme="custom-leozh-lcars-twok-dark"] body,
+[data-theme="custom-leozh-lcars-twok-light"] body {
+  text-shadow: 0 0 1px color-mix(in srgb, currentColor 50%, transparent),
+    0 0 6px color-mix(in srgb, currentColor 28%, transparent);
+}
+/* Every screen on the set sits in a thick grey housing with rounded corners. */
+[data-theme="custom-leozh-lcars-twok-dark"] .sidebar,
+[data-theme="custom-leozh-lcars-twok-light"] .sidebar {
+  border: 4px solid #4a4e53;
+  border-radius: 24px;
+  background: #000000;
+}
+[data-theme="custom-leozh-lcars-twok-dark"] .code-block,
+[data-theme="custom-leozh-lcars-twok-light"] .code-block {
+  border: 4px solid #4a4e53;
+  border-radius: 18px;
+  background: #000000;
+}
+/* Readouts are set flush in rectangles, not chat bubbles. */
+[data-theme="custom-leozh-lcars-twok-dark"] .message-bubble,
+[data-theme="custom-leozh-lcars-twok-light"] .message-bubble {
+  border-radius: 3px;
+}
+[data-theme="custom-leozh-lcars-twok-dark"] .input-area,
+[data-theme="custom-leozh-lcars-twok-light"] .input-area {
+  caret-color: #f59725;
+}
+[data-theme="custom-leozh-lcars-twok-dark"] button.primary,
+[data-theme="custom-leozh-lcars-twok-light"] button.primary {
+  border-radius: 4px;
+  letter-spacing: 0.06em;
+  box-shadow: 0 0 10px rgba(245, 151, 37, 0.3);
+}
