@@ -5,7 +5,7 @@ This file covers the pack's own code and artwork and the font it ships.
 
 -------------------------------------------------------------------------------
 1. Pack code, artwork and sounds (theme.json, variables.json,
-   styles/overrides.css, branding/, loader/, audio/)
+   styles/overrides.css, branding/, loader/, audio/, overlays/ script)
 -------------------------------------------------------------------------------
 
 The Starfleet insignia and the ship outline in branding/ are fan art of
@@ -37,6 +37,7 @@ SOFTWARE.
 -------------------------------------------------------------------------------
 2. Michroma (styles/fonts/michroma-regular.ttf)
    and the letter outlines drawn in branding/splash.svg
+   and the glyphs embedded in overlays/standby.html
 -------------------------------------------------------------------------------
 
 Copyright 2011 The Michroma Project Authors (https://github.com/googlefonts/Michroma-font)
