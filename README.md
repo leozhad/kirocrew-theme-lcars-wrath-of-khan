@@ -8,9 +8,10 @@ These screens are older than LCARS, which first appeared on *The Next Generation
 - **Light mode:** the same as dark. The film has no light screens.
 - **Type:** Michroma, a free face in the Microgramma style. The film uses Microgramma Extended Bold for "ALERT CONDITION: RED" and the ship schematics. The letter shapes match; the film's type is heavier.
 - **Thinking indicator:** the tactical ring, with a sweep and a magenta target pip.
+- **Welcome mark:** the movie-era Starfleet arrowhead over its ring, in the title orange, on a new chat's welcome screen.
 - **Screensaver:** after 15 minutes with no key press, click, scroll or touch, two bridge monitors in their grey housings. The upper one is the film's deflector-shield schematic: the refit Enterprise in green wireframe with its arc of lamps, "DEFLECTOR SHIELDS", "U.S.S. ENTERPRISE NCC-1701" and a scan line crossing the ship. The lower one is the Kobayashi Maru tactical display: the blue ring and its orbits, the NAV, TAC and COM counters, "STARDATE 8130.3" (the film's opening log) in the title orange, and the engineering station's bars and lamps. Press a key or click to dismiss it; the click does not reach the app. The dashboard's nav, session list and chat header stay on top, so the monitors fill the area to their right. It does not run when the OS is set to reduce motion, and it stops after 30 minutes.
 - **Desktop splash:** while the desktop app waits for its gateway, a monitor in the grey housing: the tactical ring with its orbit ellipses round a wireframe of the refit Enterprise (NCC-1701), traced from the film's deflector-shield schematic, with readout lines and counters. It holds still when the OS asks for reduced motion.
-- **Insignia:** the browser tab and the new-chat screen show the movie-era Starfleet arrowhead over its ring, in the title orange.
+- **Insignia:** the browser tab shows the same arrowhead.
 - **Code:** code blocks, diffs and the file viewer use the `andromeeda` scheme (orange, green and violet) in both modes, so code stays readable on the black glass.
 - **Sounds:** short console tones when the theme turns on or off, when a reply arrives, on notifications, and when an approval waits. Original sounds made in code (`tools/sounds.py`), shaped after the film's early-1980s consoles: soft sine bloops with a slow warble. None is taken from the film. They stay silent under reduced motion and while sounds are muted.
 
@@ -20,9 +21,9 @@ Needs Kiro Crew 0.13.0 or newer; older versions refuse the pack.
 
 Pick System under Settings → Display → Font Family to keep the OS font.
 
-| Chat | Screensaver | Desktop splash |
-|---|---|---|
-| ![Green text on black, code blocks in grey rounded housings, orange buttons](.github/screenshots/wrath-of-khan-dark.png) | ![Two grey-housed monitors: a green wireframe of the refit Enterprise with Deflector Shields, and a blue tactical ring with orbits, Stardate 8130.3 in orange, bars and NAV, TAC and COM counters](.github/screenshots/wrath-of-khan-screensaver.png) | ![Desktop splash: a grey-housed monitor with a blue tactical ring round a green wireframe of the refit Enterprise, KIRO CREW in orange](.github/screenshots/wrath-of-khan-splash.jpg) |
+| Chat | Screensaver | Desktop splash | Welcome mark | First pick |
+|---|---|---|---|---|
+| ![Green text on black, code blocks in grey rounded housings, orange buttons](.github/screenshots/wrath-of-khan-dark.png) | ![Two grey-housed monitors: a green wireframe of the refit Enterprise with Deflector Shields, and a blue tactical ring with orbits, Stardate 8130.3 in orange, bars and NAV, TAC and COM counters](.github/screenshots/wrath-of-khan-screensaver.png) | ![Desktop splash: a grey-housed monitor with a blue tactical ring round a green wireframe of the refit Enterprise, KIRO CREW in orange](.github/screenshots/wrath-of-khan-splash.jpg) | ![A new chat's welcome screen: the orange Starfleet arrowhead in a ring above a green greeting and six starter cards](.github/screenshots/wrath-of-khan-welcome.jpg) | ![The dialog "Enable LCARS · Wrath of Khan experience?" with Sounds and Overlays checked, and Keep colors only and Save buttons](.github/screenshots/wrath-of-khan-first-pick.jpg) |
 
 ## The three LCARS packs
 
