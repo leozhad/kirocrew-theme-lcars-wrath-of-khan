@@ -8,12 +8,20 @@ These screens are older than LCARS, which first appeared on *The Next Generation
 - **Light mode:** the same as dark. The film has no light screens.
 - **Type:** Michroma, a free face in the Microgramma style. The film uses Microgramma Extended Bold for "ALERT CONDITION: RED" and the ship schematics. The letter shapes match; the film's type is heavier.
 - **Thinking indicator:** the tactical ring, with a sweep and a magenta target pip.
+- **Desktop splash:** while the desktop app waits for its gateway, a monitor in the grey housing: the tactical ring with its orbit ellipses round a wireframe of the refit Enterprise (NCC-1701), traced from the film's deflector-shield schematic, with readout lines and counters. It holds still when the OS asks for reduced motion.
+- **Insignia:** the browser tab and the new-chat screen show the movie-era Starfleet arrowhead over its ring, in the title orange.
+- **Code:** code blocks, diffs and the file viewer use the `andromeeda` scheme (orange, green and violet) in both modes, so code stays readable on the black glass.
+- **Sounds:** short console tones when the theme turns on or off, when a reply arrives, on notifications, and when an approval waits. Original sounds made in code (`tools/sounds.py`), shaped after the film's early-1980s consoles: soft sine bloops with a slow warble. None is taken from the film. They stay silent under reduced motion and while sounds are muted.
+
+The first time you pick this theme, Kiro Crew asks whether to play its sounds. Change that later under Settings → Display → Theme → Experience → Sounds.
+
+Needs Kiro Crew 0.13.0 or newer; older versions refuse the pack.
 
 Pick System under Settings → Display → Font Family to keep the OS font.
 
-| Chat |
-|---|
-| ![Green text on black, code blocks in grey rounded housings, orange buttons](.github/screenshots/wrath-of-khan-dark.png) |
+| Chat | Desktop splash |
+|---|---|
+| ![Green text on black, code blocks in grey rounded housings, orange buttons](.github/screenshots/wrath-of-khan-dark.png) | ![Desktop splash: a grey-housed monitor with a blue tactical ring round a green wireframe of the refit Enterprise, KIRO CREW in orange](.github/screenshots/wrath-of-khan-splash.jpg) |
 
 ## The three LCARS packs
 
@@ -30,6 +38,12 @@ Pick System under Settings → Display → Font Family to keep the OS font.
 3. Install, then pick **LCARS · Wrath of Khan** in the Theme list.
 
 To update, install the same URL again.
+
+From a browser that is not on the gateway's machine (a phone, say), use a zip instead: on GitHub choose **Code → Download ZIP**, then in Install Theme set **Theme source** to **Zip file** and pick that file. Kiro Crew finds the pack inside the zip's one top-level folder.
+
+## Use your own sounds
+
+The sounds are WAV files in `audio/`, named in `audio/manifest.json`: `activate` and `deactivate` (the theme turns on or off), `received` (a reply arrives), `notify` (notifications) and `approval` (an approval waits). To play your own, clone or unzip this repo, replace any of those files with a sound of your own under the same name, and install that folder (**Local folder**) or a zip of it. Kiro Crew accepts WAV, MP3 or OGG; if you change the extension, change `src` in `audio/manifest.json` to match. Keep each file under 512 KB. Kiro Crew stops a sound after its `maxDuration` (at most 5 s for `activate`, 1 s for `received`, 2 s for the others). Do not edit the installed copy: reinstalling replaces it.
 
 ## Film evidence
 
@@ -54,8 +68,10 @@ Type: Microgramma Extended Bold. [Memory Alpha](https://memory-alpha.fandom.com/
 
 Shapes: rectangular screens in thick grey housings with rounded corners (55, 71). No elbows, no pills.
 
+Ship: the refit Enterprise (NCC-1701), top view, from the deflector-shield schematic (94). `tools/splash.py` keeps it as vector data in saucer radii: the saucer fitted as a circle (residual under 2 px), its rings and 24 spokes read from radial and angular profiles, and the hull aft of the saucer as OpenCV contours of the line art, simplified to 2 px. The frame itself is not stored. The Enterprise-A in *The Undiscovered Country* is the same refit design, so that splash reuses the hull.
+
 ## Credits and licenses
 
-See [`LICENSE.txt`](LICENSE.txt). The pack is MIT. The font is under the SIL Open Font License 1.1.
+See [`LICENSE.txt`](LICENSE.txt). The pack, its artwork and its sounds are MIT; the sounds are original, synthesized in code, and inspired by the films. The font is under the SIL Open Font License 1.1.
 
-Star Trek and LCARS are trademarks of CBS Studios / Paramount. This is unofficial fan work with no affiliation, and it ships no film images.
+Unofficial fan art. Star Trek, LCARS, the Starfleet and Federation insignia, the ships, and related marks belong to their owners (CBS Studios / Paramount). Not affiliated with or endorsed by them. This repo ships no film images and no film audio.
