@@ -2,7 +2,7 @@
   "slug": "leozh-lcars-twok",
   "name": "LCARS · Wrath of Khan",
   "emoji": "🧬",
-  "level": 1,
+  "level": 2,
   "formatVersion": 1,
   "fonts": [
     {
@@ -11,5 +11,9 @@
       "weight": 400,
       "role": "sans"
     }
-  ]
+  ],
+  "codeTheme": {
+    "dark": "andromeeda",
+    "light": "andromeeda"
+  }
 }

@@ -1,0 +1,29 @@
+{
+  "triggers": {
+    "activate": {
+      "src": "audio/activate.wav",
+      "volume": 0.35,
+      "maxDuration": 3
+    },
+    "deactivate": {
+      "src": "audio/deactivate.wav",
+      "volume": 0.35,
+      "maxDuration": 2
+    },
+    "message-received": {
+      "src": "audio/received.wav",
+      "volume": 0.3,
+      "maxDuration": 1
+    },
+    "notification": {
+      "src": "audio/notify.wav",
+      "volume": 0.4,
+      "maxDuration": 2
+    },
+    "category:approval": {
+      "src": "audio/approval.wav",
+      "volume": 0.45,
+      "maxDuration": 2
+    }
+  }
+}
